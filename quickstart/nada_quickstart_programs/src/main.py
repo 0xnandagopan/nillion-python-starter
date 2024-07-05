@@ -54,12 +54,12 @@ async def main(args=None):
     secret_name_cred = "user_credential"
     account = SecretInteger(Input(name="Account", party=writer))
     cred = SecretInteger(Input(name="Credential", party=writer))
-	secrets_object = nillion.NadaValues(
-    {
-      secret_name_acc: account,
-      secret_name_cred: cred
-    }
-	)
+secrets_object = nillion.NadaValues(
+  {
+    secret_name_acc: account,
+    secret_name_cred: cred
+  }
+)
 
     # Writer gives themself default core_concept_permissions
     permissions = nillion.Permissions.default_for_user(writer_user_id)
