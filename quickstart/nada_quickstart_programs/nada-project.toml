@@ -2,6 +2,8 @@ name = "nada_quickstart_programs"
 version = "0.1.0"
 authors = [""]
 
+
 [[programs]]
-path = "src/main.py"
+path = "src/purchase.py"
+name = "purchase"
 prime_size = 128
